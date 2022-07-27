@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #111111;
+    padding: 50px;
+    line-height: 1.9;
+}
+.info,p{
+    font-family: 'Open Sans', sans-serif;
+}
+.top{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.info{
+    padding: 10px 0 25px 0;
+    text-align: center;
+    font-size: 0.7rem;
+}
+.offers{
+    text-transform: capitalize;
+    display: grid;
+    text-align: center;
+}
+.plans{
+    border: 1px solid rgb(156, 154, 154);
+    padding: 10px 0 0 0;
+    margin: 0 15px 18px 15px;
+    transition: transform 0.25s;
+}
+h2{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+h4{
+    font-size: 1.2rem;
+}
+.plans p{
+    font-size: 0.7rem;
+}
+.plans:hover{
+    transform: scale(1.1);
+    background-color: rgb(231, 231, 231);
+}
+.buy{
+    background-color: #e65c7b ;
+    border: none;
+    border-radius: 15px;
+    padding: 8px 30px;
+    margin: 20px 0px 10px;
+    font-size: 0.6rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+.buy:hover{
+    background-color: #ec4f71;
+    transition: all 0.25;
+}
+@media(min-width:768px){
+    span{
+        display: block;
+    }
+    .offers{
+        grid-template-columns: repeat(2,1fr);
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .plans{
+        margin: 0 9px 18px 9px;
+    }
+}
+@media(min-width:1024px){
+    :root{
+        font-size: 20px;
+    }
+    .offers{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .plans {
+        padding: 30px 30px 30px 30px;
+    }
+    .buy{
+        padding: 10px 25px;
+        border-radius: 20px;
+    }
+}
+@media(min-width:1440px){
+    :root{
+        font-size: 25px;
+    }
+    .plans{
+        padding: 50px 60px 51px 60px;
+    }
+}

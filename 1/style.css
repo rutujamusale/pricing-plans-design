@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;500;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #111111;
+    padding: 50px;
+    line-height: 1.6;
+}
+#head{
+    font-size: 2.25rem;
+}
+.info{
+    padding: 20px 0;
+}
+.info,p{
+    font-family: 'Open Sans', sans-serif;
+}
+.tables{
+    text-transform: capitalize;
+    display:grid;
+    text-align: center;
+}
+h3{
+    font-weight: 400;
+    font-size: 25px;
+}
+.plans h1{
+    font-size: 4.5rem;
+}
+.plans{
+    padding: 25px 0 0 0;
+}
+.order{
+    background-color: #999999;
+    padding: 0.9rem 2.5rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin: 20px 0 20px 0;
+    font-size: 1rem;
+}
+.order:hover{
+    background-color: #7e7e7e;
+    transition: all 0.25s;
+}
+.p1{
+    background-color: #b4cdce;
+}
+.p2{
+  background-color: #e5e5e5;  
+}
+.p3{
+    background-color: #d9d9d9;
+}
+.p4{
+    background-color: #b3b3b3;
+    /* color: white; */
+}
+.plans:last-child{
+    color: white;
+}
+.o1{
+    background-color: white;
+    color: #111111;
+    padding: 0.9rem 2.5rem;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0 15px 0;
+    font-size: 1rem;
+}
+.o1:hover{
+    background-color: rgb(224, 223, 223);
+    transition: all 0.25;
+}
+@media (min-width:765px){
+    .tables{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (min-width:1024px){
+    body{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+    }
+    .tables{
+        grid-template-columns: repeat(4,1fr);    
+    }
+}
+@media (min-width:1400px){
+    .tables{
+        grid-template-columns: repeat(4, 300px);
+    }    
+}
